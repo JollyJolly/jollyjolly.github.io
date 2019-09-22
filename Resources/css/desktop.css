@@ -1,0 +1,440 @@
+/* Universal */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: white;
+  color: #333;
+  font-size: 18px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 27px;
+  margin: 0;
+}
+
+h1,h2,h3 {
+  font-family: dapifer, serif;
+}
+
+h1 {
+  font-size: 39px;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h4, h5, h6 {
+  font-family: proxima-nova, sans-serif;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Header */
+
+header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+
+header .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  height: 75px;
+  padding-top: 40px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+nav span {
+  font-size: 18px;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:link {color: #333;}
+nav a:visited {color: #333;}
+nav a:hover {
+  padding: 5px 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+}
+
+/* Main */
+
+main {
+  padding-top: 75px;
+}
+
+/* Hero */
+
+.hero .container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 384px;
+  justify-content: center;
+}
+
+.hero h2 {
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+}
+
+.hero h3 {
+  display: none;
+}
+
+
+/* Project */
+
+section.project {
+  background-color: #FAFCFF;
+}
+
+.project .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.project figure {
+  margin: auto 0;
+}
+
+.project img {
+  width: 360px;
+  height: auto;
+}
+
+.project .info {
+  text-align: center;
+}
+
+
+.project h1 {
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.project h5 {
+  font-weight: 400;
+  margin-top: 6px;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+
+.project .button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px;
+  text-decoration: none;
+}
+
+a.button:link {color: #333;}
+a.button:visited {color: #333;}
+a.button:hover {color: #333;}
+
+
+
+/* Footer */
+
+footer .container {
+  align-items: center;
+  display: flex;
+
+}
+
+footer img {
+  height: 20px;
+  margin: 8px;
+}
+
+footer h6 {
+  font-weight: 400;
+  padding-right: 8px;
+}
+
+
+/* About Page */
+
+
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 240px;
+
+}
+
+.about h1 {
+  font-style:italic;
+  font-weight: 400;
+}
+
+.about h3 {
+  font-weight: 400;
+}
+
+.biography {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding-left: 10px;
+}
+
+.text {
+  width: 90%;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+}
+
+.experience, .education, .skills {
+  margin: 0 0 20px 0;
+}
+
+.resume h3 {
+  margin: 18px 0;
+}
+
+.resume h4 {
+  font-weight:400;
+  margin: 4px 0;
+}
+
+.resume h5 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 4px 0;
+}
+
+.resume p {
+  margin: 4px 0;
+}
+
+.item {
+  margin: 24px 0;
+}
+
+.experience p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* project page */
+
+
+.chapter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.chapter h2 {
+  font-weight: 400;
+  margin: 80px 0 30px 0;
+}
+
+.chapter h3 {
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.chapter figure {
+  align-items:flex-start;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Project - Intro */
+
+.intro {
+  align-items: center;
+  background-color: #FAFCFF;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.intro img {
+  height: auto;
+  width: 100%;
+}
+
+/* Project - Content */
+
+/* 1. Meet Eliza */
+#homescreen {
+  height: auto;
+  width: 100%;
+  max-width: 380px;
+}
+
+/* 2. The Challenge of Traditional Recording Tools */
+#tools {
+  height: auto;
+  margin: 20px 0;
+  max-width: 700px;
+  width: 100%;
+}
+
+#app {
+  height:auto;
+  margin: 20px 0 30px 0;
+  width: 239px;
+}
+
+#list {
+  height:auto;
+  margin: 20px 0 40px 0;
+  width: 300px;
+}
+
+/* 3. Solution: Customized Playback Control */
+
+.feedback {
+  color: #9B9B9B;
+  font-weight:400;
+  margin: 40px 0;
+  text-align: center;
+}
+
+#note {
+  height: auto;
+  margin: 20px 0 30px 0;
+  width: 360px;
+}
+
+
+/* 4. Solution: File Organization and Search */
+
+#organization {
+  height: auto;
+  margin: 20px 0 40px 0;
+  width:100%;
+}
+
+/* 5. Why Eliza? */
+
+#logo {
+  height:64px;
+  margin: 20px 0 30px 0;
+  width:auto;
+}
+
+#colorpalette {
+  height:151px;
+  margin: 20px 0 40px 0;
+  width:auto;
+}
+
+/* 7. Deliverables */
+.thanks {
+  font-weight: 400;
+}
+
+/* 8. Bottom */
+.bottom {
+  align-items: center;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  width: auto;
+}
+
+.bottom a{
+  font-weight: 400;
+}
+
+.bottom a:link {color: #333;}
+.bottom a:visited {color: #333;}
+.bottom a:hover {color: #333;}
+
+@media (min-width: 769px) {
+
+  .hero .container{
+    margin-top: 75px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 597px;
+    justify-content: center;
+  }
+
+  .hero h3 {
+    display: flex;
+    font-weight: 300;
+  }
+
+  .project .container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .project figure {
+    margin: auto 0;
+  }
+
+  .project .info {
+    margin-top: 210px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}

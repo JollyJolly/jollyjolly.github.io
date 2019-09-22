@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Joyce Le</title>
     <link href="./Resources/css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xat3rkj.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./Resources/scripts/main.js"></script>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html">Work</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
-      <h2>Hi there! I am Joyce, a UX/UI designer living in Vancouver.</h2>
-      <h3>I like to create meaningful digital solutions for my community.</h3>
+      <div class="container">
+        <div class="logo">
+          <a href="./index.html"><img src="./Resources/images/Joyce Logo.png" alt="designer logo"/></a>
+        </div>
+        <button class="hamburger"><img src="./Resources/images/Hamburger Menu.png" alt="menu" /></button>
+        <button class="close"><img src="./Resources/images/close-button.png" alt="menu" /></button>
+        <nav>
+          <span><a href="./index.html">Work</a></span>
+          <span><a href="./about.html">About</a></span>
+          <span><a href="./contact.html">Contact</a></span>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="work">
-        <h1>Eliza</h1>
-        <h6>Product Design</h6>
-        <img src="./Resources/images/1-1 Eliza screen.png" alt="The Homescreen of Eliza App">
-        <button>View Case study</button>
+      <section class="hero">
+        <div class="container">
+          <h2>Hi there! I am Joyce, a UX/UI designer living in Vancouver.</h2>
+          <h3>I like to create meaningful digital solutions for my community.</h3>
+        </div>
+      </section>
+      <section class="project">
+        <div class="container">
+          <div class="info">
+            <h1>Eliza</h1>
+            <h5>Product Design</h5>
+            <a class="button" href="./project.html">View Case study</a>
+          </div>
+          <figure>
+            <a href="./project.html"><img src="./Resources/images/1-1 Eliza screen.png" alt="The Homescreen of Eliza App" /></a>
+          </figure>
+        </div>
       </section>
     </main>
     <footer>
-      <p>Joyce 2019</p>
+      <div class="container">
+        <h6>&copy; Joyce 2019</h6>
+        <a href=""><img src="./Resources/images/github-logo.svg" alt="github link" /></a>
+        <a href="mailto:{giraffejolly@gmail.com}"><img src="./Resources/images/envelope.svg" alt="email link" /></a>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

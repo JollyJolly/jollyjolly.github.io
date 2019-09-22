@@ -1,148 +1,233 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eliza Project | Joyce Le</title>
+    <link href="./Resources/css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xat3rkj.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./Resources/scripts/main.js"></script>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html">Work</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
+      <div class="container">
+        <div class="logo">
+          <a href="./index.html"><img src="./Resources/images/Joyce Logo.png" alt="designer logo"/></a>
+        </div>
+        <button class="hamburger"><img src="./Resources/images/Hamburger Menu.png" alt="menu" /></button>
+        <button class="close"><img src="./Resources/images/close-button.png" alt="menu" /></button>
+        <nav>
+          <span><a href="./index.html">Work</a></span>
+          <span><a href="./about.html">About</a></span>
+          <span><a href="./contact.html">Contact</a></span>
+        </nav>
+      </div>
     </header>
     <main>
+      <!-- Top Image -->
+      <figure class="intro" id="top">
+        <div class="container">
+            <img src="./Resources/images/1-1 Eliza screen.png" alt="Eliza App screens"  />
+        </div>
+      </figure>
 
-<!-- 1. Meet Eliza -->
-      <section class="container">
-        <h3>1. Meet Eliza</h3>
-        <article>
-          <p>
-            Music students, specifically ones taking piano or voice lessons on a weekly basis, encounter the challenge of self-practicing with the lesson recordings during the week. Unlike glancing through pages of notes or searching by keywords in text documents, it’s quite challenging to go back and find sound bytes in these hour-long recordings. As time goes on,  if the files are not well organized, recording collections become quite large and difficult to navigate. In the long term, only being able to search by filename and date makes it very hard for students to find the specific recordings.
-          </p>
-          <p>
-            For many music students, lesson recordings are like a time capsule of their music journey that brings them so much joy. They would love to have the recordings well organized so that they can marvel in wonderment at years and years of their memories. That’s why I created Eliza - an app designed for music students to record and keep all of their music lessons in the cloud, then organize and review them with ease.
-          </p>
-        </article>
-        <figure>
-          <img src="./Resources/images/1-1 Eliza screen.png" alt="The screen of Eliza App"/>
-        </figure>
-      </section>
+      <!-- Specs -->
+      <div class="container">
+        <div class="spec">
+          <h5>My Role</h5>
+          <p>UX/UI Design, Product Strategy, Branding</p>
+        </div>
+        <div class="spec">
+          <h5>Tools</h5>
+          <p>Sketch, InVision, Maze, Google Forms</p>
+        </div>
+      </div>
 
+      <!-- Text  -->
+      <div class="container">
+        <!-- 1. Meet Eliza -->
+        <section class="chapter">
+          <h2>1. Meet Eliza</h2>
+          <article>
+            <p>
+              Music students, specifically ones taking piano or voice lessons on a weekly basis, encounter the challenge of self-practicing with the lesson recordings during the week. Unlike glancing through pages of notes or searching by keywords in text documents, it’s quite challenging to go back and find sound bytes in these hour-long recordings. As time goes on,  if the files are not well organized, recording collections become quite large and difficult to navigate. In the long term, only being able to search by filename and date makes it very hard for students to find the specific recordings.
+            </p>
+            <p>
+              For many music students, lesson recordings are like a time capsule of their music journey that brings them so much joy. They would love to have the recordings well organized so that they can marvel in wonderment at years and years of their memories. That’s why I created Eliza - an app designed for music students to record and keep all of their music lessons in the cloud, then organize and review them with ease.
+            </p>
+          </article>
+          <figure>
+            <img id="homescreen" src="./Resources/images/1-1 Eliza screen.png" alt="The screen of Eliza App"/>
+          </figure>
+        </section>
 
-<!-- 2. The Challenge of Traditional Recording Tools -->
-      <section class="container">
-          <h3>2. The Challenge with Traditional Recording Tools</h3>
+        <!-- 2. The Challenge of Traditional Recording Tools -->
+        <section class="chapter">
+          <h2>2. The Challenge of Traditional Recording Tools</h2>
+          <figure>
+            <img id="app" src="./Resources/images/2-1 Tools.png" alt="traditional recording tools"/>
+          </figure>
           <article>
             <p>
               Back in the day, before using the cloud storage on mobile, a lot of music students used hand-held recording devices to record the lessons. However, most of them said they never reviewed the recordings because it was difficult to go back and forth to replay the audio on the device.
             </p>
             <p>
-              Later on, students started to record on the phone. Most of them used Voice Memos, Apple’s built-in recording app. The interface has become much more user-friendly and allowed users to review recent recordings in the app. However, they often needed to transfer the recordings between the mobile device and the computer when the storage became full.
+              Later on, students started to record on the phone. Most of them used Voice Memos, Apple’s built-in recording app. The interface has become much more user-friendly and allowed users to review recent recordings in the app. However they often needed to transfer the recordings between the mobile device and the computer when the storage became full.
             </p>
             <p>
-              When cloud services became popular, people were excited to store the recordings in the cloud. One popular app that a lot of students used was Voice Recorder but they soon discovered a crucial flaw - when students were recording the lessons they needed to turn off the Wi-Fi to avoid any interruptions during their music class, yet the app could only sync successfully if recordings were made with Wi-Fi turned on. However, one of the benefits they found with the app was that it included folders to organize recordings, whereas Voice Memo only allowed organizing all recordings by date in a single list.
+              When cloud services became popular, people were excited to store the recordings in the cloud. One popular app that a lot of students used was Voice Recorder but they soon discovered a crucial flaw - when students were recordings the lesson they needed to turn off the Wi-Fi to avoid any interruptions during their music class, yet the app cloud only sync successfully if recordings were made with Wi-Fi turned on. However, one of the benefits they found with the app Voice Recorder was that it included folders to organize recordings, whereas Voice Memo only allowed organizing all recordings by date in a single list.
             </p>
           </article>
           <figure>
-            <img src="./Resources/images/2-1 Tools.png" alt="traditional recording tools"/>
+            <img id="app" src="./Resources/images/2-2 Voice Recorder.png" alt="traditional recording tools"/>
+          </figure>
+          <figure>
+            <img id="app" src="./Resources/images/2-3 Voice Memos.png" alt="traditional recording tools"/>
           </figure>
           <article>
             <p>
               Some students changed back to using Voice Memo after iOS 12 when the app integrated with iCloud service for users to sync recordings automatically between desktop and mobile. Now they have their recordings safely stored in the cloud but they still seldom review the recordings from months ago. Though they want to, it is very difficult for them to find the item through a long list of recordings with only the filename shown.
             </p>
-          <article>
-          <figure>
-            <embed src="./Resources/images/2-5 Voice Memo_Long List.gif"/>
-          </figure>
-        </section>
-
-<!-- 3. Solution: Customized Playback Control -->
-      <section class="container">
-          <h3>3. Solution: Customized Playback Control</h3>
-          <article>
-            <p>
-              After a few casual interviews with music peers, I sent out a survey to identify user’s specific issues with existing recording tools and to discover possible solutions.
-            </p>
-            <p>
-              According to the survey results, 100% of the students responded that it was difficult to find relevant parts in long recordings. Moving the playback slider back and forth was an obvious annoyance for users. 75% of the participants also stated that playing a few relevant parts repeatedly was difficult. While most users were aware of the fast-forwarding and rewinding buttons in some recording apps, 85% of them remarked that fast-forwarding and rewinding was not always useful because the time intervals were fixed.
-            </p>
-            <p>
-              Given the survey results, the main problem to solve for our users became clear: how to help users easily find a sound byte in long recordings?
-            </p>
-            <ul>
-              <li>Show fast-forward and rewind buttons to let users easily repeat and skip content</li>
-              <li>Give users controls to adjust fast forward and rewind intervals to make them more useful</li>
-              <li>Allow users to bookmark and quickly jump to sections of interest</li>
-            </ul>
-          </article>
-
-          <h4>Show Fast-forward and Rewind</h4>
-          <figure>
-            <embed src="./Resources/images/3-1 Voice Memo_Move cursor.gif"/>
-          </figure>
-
-          <h4>Control Fast-forward and Rewind Interval</h4>
-          <figure>
-            <embed src="./Resources/images/3-2 Eliza_FF:RW.gif"/>
-          </figure>
-
-          <h4>Bookmarks and Notes</h4>
-          <figure>
-            <embed src="./Resources/images/3-3 Take notes.gif"/>
-          </figure>
-          <figure>
-            <embed src="./Resources/images/3-4 Timestamps.gif"/>
-          </figure>
-        </section>
-
-
-<!-- 4. Solution: File Organization and Search -->
-      <section class="container">
-          <h3>4. Solution: File Organization and Search</h3>
-          <article>
-            <p>
-              With the playback and review features, users can now find sections within long recordings. However, after months and years of usage, it’s still hard to know which song is covered in which recordings. Using filenames can help to an extent, but there are often more than one song in each lesson, which makes it difficult to name the recording file apparently. How would it be possible to find a specific song in the long term?
-            </p>
-            <p>
-              According to my research survey, 95% of participants said that they needed folders to help organize recordings. 55% found it difficult to search for a recording solely by its file name. 40% said that the recordings take up too much space on their devices.
-            </p>
-            <p>
-              With existing tools, users often come up with their own ingenious ways to overcome these challenges. However, our app can go a step further to help solve these issues. How can we help users effectively organize and search recordings? I’ve chosen 3 features to address these problems:
-            </p>
-            <ul>
-              <li>Create folders to categorize recordings</li>
-              <li>Tag files by topics to facilitate search</li>
-              <li>Upload recordings to cloud storage</li>
-            </ul>
           </article>
           <figure>
-            <img src="./Resources/images/4-1 Organization.png" alt="organization and search"/>
+            <embed id="list" src="./Resources/images/2-4 Voice Memo_Long List.gif"/>
           </figure>
-        </section>
+          </section>
 
-<!-- 5. Why Eliza? -->
-      <section class="container">
-          <h3>5. Why Eliza?</h3>
-          <figure>
-            <img src="./Resources/images/5-1 Eliza Logo.png" alt="Eliza logo"/>
-          </figure>
-          <article>
-            <p>
-              The app is named Eliza after the main character from the movie "My Fair Lady". In the story, Eliza was a Cockney flower seller who took speech lessons from a phonetics professor and practiced speech using phonographs. Phonograph is to Eliza as our application is to music students - to record lessons and provide a medium of review to improve one’s voice and instrument skills.
-            </p>
-            <p>
-              For the main colors, I chose a color palette of red and blue. Red represents the color of a traditional recording button and the color blue was chosen to represent the cloud aspect of a cloud-based service.
-            </p>
-          </article>
-          <figure>
-            <img src="./Resources/images/5-2 Color Palette.png" alt="Eliza color palette"/>
-          </figure>
-        </section>
+        <!-- 3. Solution: Customized Playback Control -->
 
-<!-- 6. What I learned from Eliza -->
-      <section class="container">
-          <h3>6. What I learned from Eliza</h3>
+        <section class="chapter">
+            <h2>3. Solution: Customized Playback Control</h2>
+            <article>
+              <p>
+                After a few casual interviews with music peers, I sent out a survey to identify user’s specific issues with existing recording tools and to discover possible solutions.
+              </p>
+              <p>
+                According to the survey results, 100% of the students responded that it was difficult to find relevant parts in long recordings. Moving the playback slider back and forth was an obvious annoyance for users. 75% of the participants also stated that playing a few relevant parts repeatedly was difficult. While most users were aware of the fast-forwarding and rewinding buttons in some recording apps, 85% of them remarked that fast-forwarding and rewinding was not always useful because the time intervals were fixed.
+              </p>
+              <p>
+                Given the survey results, the main problem to solve for our users became clear: how to help users easily find a sound byte in long recordings?
+              </p>
+              <ul>
+                <li>Show fast-forward and rewind buttons to let users easily repeat and skip content</li>
+                <li>Give users controls to adjust fast forward and rewind intervals to make them more useful</li>
+                <li>Allow users to bookmark and quickly jump to sections of interest</li>
+              </ul>
+            </article>
+
+            <!-- 3.1 Fast-forward and Rewind -->
+            <div class="feature">
+              <h3>Show Fast-forward and Rewind</h3>
+              <article>
+                <p>
+                  When a user practices along a new recording, they may still have the lesson fresh in memory and could find the relevant part using the slider, but it quickly becomes tedious when trying to repeat a section using the playback slider alone. One user responded:
+                </p>
+                <p class="feedback">
+                  “I get very frustrated and my fingers would become very stiff when trying to move the playback slider repeatedly.”
+                </p>
+                <p>
+                  When a user tries to rewind 10 seconds using the playback slider on a long recording, they may easily rewind too little or too much; not to mention trying to rewind by even smaller intervals.
+                </p>
+                <p>
+                  Although some apps offer interactions that allow users to adjust time by seconds, 45% of participants I interviewed complained that using the slider to replay sections of recordings was very tedious.
+                </p>
+              </article>
+              <figure>
+                <embed id="note" rc="./Resources/images/3-1 Voice Memo_Move cursor.gif"/>
+              </figure>
+            </div>
+
+            <div class="feature">
+              <h3>Control Fast-forward and Rewind Interval</h3>
+              <article>
+                <p>
+                  Currently, most students know how to use the fast-forward and rewind buttons to jump back and forth within recordings, but the interval by which existing apps fast-forward and rewind are fixed and restrictive. 65% of  the participants agreed that they could lose focus when the rewind button overshoot,  thus needing to listen to irrelevant parts. For example, here’s a few user’s comments:
+                </p>
+                <p class="feedback">
+                  “… I still spent a lot of time waiting after each rewind before it could repeat the part I wanted. Sometimes I get carried away that way.”
+                </p>
+                <p class="feedback">
+                  “Being able to fast-forward and rewind by just 3 seconds is my dream.”
+                </p>
+                <p>
+                  As a solution, I added controls to allow users to customize the interval by which they may fast-forward and rewind.
+                </p>
+              </article>
+              <figure>
+                <embed id="note" src="./Resources/images/3-2 Eliza_FF:RW.gif"/>
+              </figure>
+              <article>
+                <p>
+                  Although they could only select from a few options, I received positive feedback from users during usability tests. When wanting to repeat a section that was 6s seconds long, they’d much rather tap a 3 second rewind button twice than having to rewind 10s and wait an extra 4 seconds to listen to the part again. Therefore, customizable intervals on fast-forward and rewind buttons can make it easier for users to review and practice small portions of the recordings.
+                </p>
+              </article>
+            </div>
+
+            <div class="feature">
+              <h3>Bookmarks and Notes</h3>
+              <article>
+                When a user reviews a recording, they may want to take note of the specific time and content in the recording in order to keep track of them and review them more easily next time. My solution is to allow the user to create a Time Bookmark to capture the time and write notes alongside the recording.
+              </article>
+              <figure>
+                <embed id ="note" src="./Resources/images/3-3 Take notes.gif">
+              </figure>
+              <article>
+                <p>
+                  The Time Bookmarks will be clickable timestamps that allow the user to jump directly to the part they will be looking for when reviewing the notes later.
+                </p>
+              </article>
+              <figure>
+                <embed id="note" src="./Resources/images/3-4 Timestamps.gif"/>
+              </figure>
+            </div>
+          </section>
+
+        <!-- 4. Solution: File Organization and Search -->
+        <section class="chapter">
+            <h2>4. Solution: File Organization and Search</h2>
+            <article>
+              <p>
+                With the playback and review features, users can now find sections within long recordings. However, after months and years of usage, it’s still hard to know which song is covered in which recordings. Using filenames can help to an extent, but there are often more than one song in each lesson, which makes it difficult to name the recording file apparently. How would it be possible to find a specific song in the long term?
+              </p>
+              <p>
+                According to my research survey, 95% of participants said that they needed folders to help organize recordings. 55% found it difficult to search for a recording solely by its file name. 40% said that the recordings take up too much space on their devices.
+              </p>
+              <p>
+                With existing tools, users often come up with their own ingenious ways to overcome these challenges. However, our app can go a step further to help solve these issues. How can we help users effectively organize and search recordings? I’ve chosen 3 features to address these problems:
+              </p>
+              <ul>
+                <li>Create folders to categorize recordings</li>
+                <li>Tag files by topics to facilitate search</li>
+                <li>Upload recordings to cloud storage</li>
+              </ul>
+            </article>
+            <figure>
+              <img id ="organization" src="./Resources/images/4-1 Organization.png" alt="organization and search"/>
+            </figure>
+          </section>
+
+        <!-- 5. Why Eliza? -->
+        <section class="chapter">
+            <h2>5. Why Eliza?</h2>
+            <figure>
+              <img id="logo" src="./Resources/images/5-1 Eliza Logo.png" alt="Eliza logo"/>
+            </figure>
+            <article>
+              <p>
+                The app is named Eliza after the main character from the movie "My Fair Lady". In the story, Eliza was a Cockney flower seller who took speech lessons from a phonetics professor and practiced speech using phonographs. Phonograph is to Eliza as our application is to music students - to record lessons and provide a medium of review to improve one’s voice and instrument skills.
+              </p>
+              <p>
+                For the main colors, I chose a color palette of red and blue. Red represents the color of a traditional recording button and the color blue was chosen to represent the cloud aspect of a cloud-based service.
+              </p>
+            </article>
+            <figure>
+              <img id="colorpalette" src="./Resources/images/5-2 Color Palette.png" alt="Eliza color palette"/>
+            </figure>
+          </section>
+
+        <!-- 6. What I learned from Eliza -->
+        <section class="chapter">
+          <h2>6. What I learned from Eliza</h2>
           <article>
             <p>
               Eliza was my first UX/UI project. I met with many music students and general users who helped me understand the importance of usability testing; I was able to learn how to better conduct such tests. I was able to iterate the app many times based on user feedback to create interfaces and interactions that were more user friendly.
@@ -152,9 +237,41 @@
             </p>
           </article>
         </section>
+
+        <!-- 7. Deliverables -->
+        <section class="chapter">
+          <article>
+            <p class="thanks">Thank you for reading my story of Eliza. If you would like to know more about the final deliverables of the design project, check out the links below:</p>
+            <div class="deliverables">
+              <a href="https://drive.google.com/file/d/1auUkakQS_vXlbLP6DfUzerKu7EZsGOIf/view?usp=sharing">User Survey</a>
+              <a href="https://drive.google.com/file/d/1UdMTiL7t-TL83bCCt1xOzzIkvdv5a9D1/view?usp=sharing">Competitive Analysis</a>
+              <a href="https://drive.google.com/file/d/1SoZmodxQE0rJJqxgYczX-5I9zGqh5H1Y/view?usp=sharing">User Persona</a>
+              <a href="https://drive.google.com/file/d/1sxboEmM5bREzlBFabbEUJ6tWUcQ5ov7r/view?usp=sharing">User Stories</a>
+              <a href="https://drive.google.com/file/d/1NGVx7qUIv4kVSPMqwkFaloWgPO2XZPbw/view?usp=sharing">User Flow</a>
+              <a href="https://sketch.cloud/s/RVxkl">Wireframe</a>
+              <a href="https://docs.google.com/document/d/12IONkcn3ZgUpcPJbB4W3N4pPwMfPtivIaKYbzAfnsgM/edit?usp=sharing">Branding Process</a>
+              <a href="https://sketch.cloud/s/ZKPgv">High Fidelity Prototype</a>
+            </ul>
+          </article>
+        </section>
+
+        <!-- 8. Bottom -->
+        <div class="bottom">
+          <a href="#top">BACK TO THE TOP</a>
+        </div>
+
+
+
+
+      </div>
     </main>
     <footer>
-      <p>Joyce 2019</p>
+      <div class="container">
+        <h6>&copy; Joyce 2019</h6>
+        <a href=""><img src="./Resources/images/github-logo.svg" alt="github link" /></a>
+        <a href="mailto:{giraffejolly@gmail.com}"><img src="./Resources/images/envelope.svg" alt="email link" /></a>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

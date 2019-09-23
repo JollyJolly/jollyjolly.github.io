@@ -71,7 +71,6 @@ header .container {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  display: flex;
   height: 75px;
   padding-top: 40px;
 }
@@ -150,13 +149,16 @@ main {
 footer .container {
   align-items: center;
   display: flex;
-  padding-top: 80px;
+  padding-top: 60px;
+}
 
+footer a {
+  line-height: 0;
 }
 
 footer img {
-  height: 20px;
-  margin: 8px;
+  height: 36px;
+  padding: 8px;
 }
 
 footer h6 {
@@ -177,6 +179,7 @@ footer h6 {
   font-size: 24px;
   font-weight: 400;
   line-height: 56px;
+  margin: 0;
   text-align: center;
 }
 
@@ -233,9 +236,9 @@ section.project {
   text-decoration: none;
 }
 
-.hidden {
-  display: none;
-}
+a.button:link {color: #333;}
+a.button:visited {color: #333;}
+a.button:hover {color: #333;}
 
 /* Project Page */
 
@@ -260,6 +263,13 @@ section.project {
   margin-top: 40px;
 }
 
+.feedback {
+  color: #9B9B9B;
+  font-weight:400;
+  margin: 40px 0;
+  text-align: center;
+}
+
 .intro img,
 .chapter img,
 .chapter embed {
@@ -269,12 +279,87 @@ section.project {
 .intro {
   background-color: #FAFCFF;
   margin: 0;
-  width: 100%;
+}
+
+.intro .container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#hero1 {
+  max-width: 380px;
+}
+
+#hero3 {
+  display: none;
+}
+
+.chapter figure {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 #homescreen {
   display: none;
 }
+
+/* 2. The Challenge of Traditional Recording Tools */
+#tools {
+  height: auto;
+  margin: 20px 0;
+  max-width: 700px;
+}
+
+#app {
+  height:auto;
+  margin: 20px 0 30px 0;
+  max-width: 300px;
+}
+
+#list {
+  height:auto;
+  margin: 20px 0 40px 0;
+  max-width: 300px;
+}
+
+/* 3. Solution: Customized Playback Control */
+
+#note {
+  height: auto;
+  margin: 20px 0 30px 0;
+  max-width: 360px;
+}
+
+
+/* 4. Solution: File Organization and Search */
+
+.organization_item {
+  height: auto;
+  margin: 20px 0;
+  max-width:280px;
+}
+
+/* 5. Why Eliza? */
+
+#logo {
+  height:auto;
+  margin: 20px 0 30px 0;
+  max-width:240px;
+}
+
+#colorpalette {
+  height:auto;
+  margin: 20px 0 40px 0;
+  max-width: 400px;
+}
+
+p.thanks {
+  margin-top: 80px;
+  font-weight: 400;
+}
+
 
 
 .deliverables {
@@ -295,6 +380,7 @@ section.project {
   font-weight: 400;
   height: 300px;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .bottom a:link {color: #333;}
@@ -336,4 +422,196 @@ section.project {
 .experience p {
   font-size: 14px;
   font-weight: 300;
+}
+
+
+@media (min-width: 769px) {
+
+button.hamburger {
+  display: none;
+}
+
+nav {
+  display: inline-flex;
+}
+
+nav span {
+  padding: 0 0 0 40px;
+}
+
+nav a {
+  text-align: right;
+  text-decoration: none;
+}
+
+nav a:link {color: #333;}
+nav a:visited {color: #333;}
+nav a:hover {
+  padding: 5px 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+/* Homepage */
+
+  .hero .container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    justify-content: center;
+  }
+
+  .hero h3 {
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 8px;
+  }
+
+
+  .project .container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .project .info {
+    margin-top: 160px;
+    text-align: left;
+  }
+
+/* Project Page */
+
+#hero1 {
+  display: none;
+}
+
+#hero3 {
+  display: flex;
+  margin: 20px 0;
+}
+
+.specification {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+
+}
+
+  /* 1. Meet Eliza */
+  #homescreen {
+    height: auto;
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .folder {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .organization {
+    display: flex;
+    justify-content: center;
+  }
+
+  .organization figure {
+    margin: 20px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 40px;
+    width: 1024px;
+  }
+
+/* Home Page */
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero h3 {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  /* About Page */
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+
+  }
+
+  .about h1 {
+    font-style:italic;
+    font-weight: 400;
+  }
+
+  .about h3 {
+    font-weight: 400;
+  }
+
+  .biography {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    padding-left: 10px;
+  }
+
+  .text {
+    width: 95%;
+  }
+
+  .resume {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+  }
+
+  .experience, .education, .skills {
+    margin: 0 0 20px 0;
+  }
+
+  .resume h3 {
+    margin: 18px 0;
+  }
+
+  .resume h4 {
+    font-weight:400;
+    margin: 4px 0;
+  }
+
+  .resume h5 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 4px 0;
+  }
+
+  .resume p {
+    margin: 4px 0;
+  }
+
+  .item {
+    margin: 24px 0;
+  }
+
+  .experience p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
 }

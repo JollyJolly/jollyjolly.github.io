@@ -27,23 +27,24 @@
       <!-- Top Image -->
       <figure class="intro" id="top">
         <div class="container">
-            <img src="./Resources/images/1-1 Eliza screen.png" alt="Eliza App screens"  />
+          <img id="hero1" src="./Resources/images/1-1 Eliza screen.png" alt="Eliza App screens"  />
+          <img id="hero3" src="./Resources/images/0 Intro Eliza.png" alt="Eliza App screens"  />
         </div>
       </figure>
 
-      <!-- Specs -->
-      <div class="container">
+      <!-- Specification -->
+      <div class="specification container">
         <div class="spec">
           <h5>My Role</h5>
           <p>UX/UI Design, Product Strategy, Branding</p>
         </div>
         <div class="spec">
           <h5>Tools</h5>
-          <p>Sketch, InVision, Maze, Google Forms</p>
+          <p>Sketch, InVision, Maze, Google Forms, Zeplin</p>
         </div>
       </div>
 
-      <!-- Text  -->
+      <!-- Text Content -->
       <div class="container">
         <!-- 1. Meet Eliza -->
         <section class="chapter">
@@ -65,7 +66,7 @@
         <section class="chapter">
           <h2>2. The Challenge of Traditional Recording Tools</h2>
           <figure>
-            <img id="app" src="./Resources/images/2-1 Tools.png" alt="traditional recording tools"/>
+            <img id="tools" src="./Resources/images/2-1 Tools.png" alt="traditional recording tools"/>
           </figure>
           <article>
             <p>
@@ -78,12 +79,14 @@
               When cloud services became popular, people were excited to store the recordings in the cloud. One popular app that a lot of students used was Voice Recorder but they soon discovered a crucial flaw - when students were recordings the lesson they needed to turn off the Wi-Fi to avoid any interruptions during their music class, yet the app cloud only sync successfully if recordings were made with Wi-Fi turned on. However, one of the benefits they found with the app Voice Recorder was that it included folders to organize recordings, whereas Voice Memo only allowed organizing all recordings by date in a single list.
             </p>
           </article>
-          <figure>
-            <img id="app" src="./Resources/images/2-2 Voice Recorder.png" alt="traditional recording tools"/>
-          </figure>
-          <figure>
-            <img id="app" src="./Resources/images/2-3 Voice Memos.png" alt="traditional recording tools"/>
-          </figure>
+          <div class="folder">
+            <figure>
+              <img id="app" src="./Resources/images/2-2 Voice Recorder.png" alt="traditional recording tools"/>
+            </figure>
+            <figure>
+              <img id="app" src="./Resources/images/2-3 Voice Memos.png" alt="traditional recording tools"/>
+            </figure>
+          </div>
           <article>
             <p>
               Some students changed back to using Voice Memo after iOS 12 when the app integrated with iCloud service for users to sync recordings automatically between desktop and mobile. Now they have their recordings safely stored in the cloud but they still seldom review the recordings from months ago. Though they want to, it is very difficult for them to find the item through a long list of recordings with only the filename shown.
@@ -201,9 +204,19 @@
                 <li>Upload recordings to cloud storage</li>
               </ul>
             </article>
-            <figure>
-              <img id ="organization" src="./Resources/images/4-1 Organization.png" alt="organization and search"/>
-            </figure>
+            <div class="organization">
+              <figure>
+                <img class ="organization_item" src="./Resources/images/4-1 Folder.png" alt="organization and search"/>
+              </figure>
+              <figure>
+                <img class ="organization_item" src="./Resources/images/4-2 Tag.png" alt="organization and search"/>
+              </figure>
+              <figure>
+                <img class ="organization_item" src="./Resources/images/4-3 Cloud.png" alt="organization and search"/>
+              </figure>
+            </div>
+
+
           </section>
 
         <!-- 5. Why Eliza? -->
@@ -260,14 +273,11 @@
           <a href="#top">BACK TO THE TOP</a>
         </div>
 
-
-
-
       </div>
     </main>
     <footer>
       <div class="container">
-        <h6>&copy; Joyce 2019</h6>
+        <h6>2019 &copy; Designed and Coded by Joyce Le</h6>
         <a href=""><img src="./Resources/images/github-logo.svg" alt="github link" /></a>
         <a href="mailto:{giraffejolly@gmail.com}"><img src="./Resources/images/envelope.svg" alt="email link" /></a>
         </ul>

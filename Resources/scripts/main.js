@@ -8,6 +8,6 @@ function hideMenuDropdown() {
 }
 
 $(document).ready(function() {
-  $('button.hamburger').click(showMenuDropdown);
-  $('button.close').click(hideMenuDropdown);
+  $('a.hamburger').click(showMenuDropdown);
+  $('a.close').click(hideMenuDropdown);
 })

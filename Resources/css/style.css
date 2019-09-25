@@ -81,7 +81,7 @@ header .container {
 }
 
 .hamburger img {
-  height: 20px;
+  height: 26px;
 }
 
 .close {
@@ -250,13 +250,16 @@ a.button:hover {color: #333;}
 /* Project Page */
 
 .spec h5 {
+  color: grey;
   font-weight: 400;
-  margin: 30px 0 8px 0;
+  margin: 30px 0 0 0;
   text-transform: uppercase;
 }
 
 .spec p {
-  margin: 8px 0;
+  font-size: 16px;
+  font-weight: 400;
+  margin:0;
 }
 
 .chapter h2 {
@@ -305,12 +308,25 @@ a.button:hover {color: #333;}
 .chapter figure {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 10px 0;
 }
 
+figure h6 {
+  color: grey;
+  font-style: italic;
+  font-weight: 400;
+  margin: 10px 0 30px 0;
+}
+
 #homescreen {
   display: none;
+}
+
+#logo {
+  width: 300px;
+  margin: 20px 0;
 }
 
 p.thanks {

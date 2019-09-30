@@ -81,7 +81,7 @@ header .container {
 }
 
 .hamburger img {
-  height: 26px;
+  height: 20px;
 }
 
 .close {
@@ -352,9 +352,20 @@ p.thanks {
   align-items: center;
   display: flex;
   font-weight: 400;
+  flex-direction: column;
   height: 300px;
   justify-content: center;
   margin-top: 60px;
+}
+
+.bottom a {
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.bottom img {
+  height: auto;
+  width: 14px;
 }
 
 .bottom a:link {color: #333;}

@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -361,8 +362,8 @@ p.thanks {
 }
 
 .bottom a {
-  text-decoration: none;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .bottom img {
@@ -489,9 +490,19 @@ nav a:hover {
 .specification {
   display: flex;
   justify-content: space-between;
+  width: 900px;
   margin-bottom: 120px;
 
 }
+
+.content {
+  width: 770px;
+}
+
+.title {
+  display: inline-flex;
+}
+
 
   /* 1. Meet Eliza */
   #homescreen {
@@ -519,19 +530,19 @@ nav a:hover {
   #tools {
     height: auto;
     margin: 20px 0;
-    max-width: 700px;
+    max-width: 600px;
   }
 
   #app {
     height:auto;
     margin: 20px 0 30px 0;
-    max-width: 300px;
+    max-width: 280px;
   }
 
   #list {
     height:auto;
     margin: 20px 0 40px 0;
-    max-width: 300px;
+    max-width: 280px;
   }
 
   /* 3. Solution: Customized Playback Control */
@@ -613,6 +624,19 @@ nav a:hover {
     font-size: 24px;
     margin: 10px;
   }
+
+  /* Project Page */
+
+  .specification {
+    width: 900px
+  }
+
+  .content {
+    width: 770px;
+  }
+
+
+
 
   /* About Page */
 
